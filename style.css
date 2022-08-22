@@ -20,7 +20,7 @@ body {
   margin: 0 auto;
   font-family: 'Barlow', sans-serif;
   font-size: 16px;
-  background-image: url('./assets/shared/pattern-square.svg'), url('./assets/shared/pattern-square.svg');
+  background-image:url('./assets/shared/pattern-square.svg'), url('./assets/shared/pattern-square.svg');
   background-repeat: no-repeat;
   background-position: top 12.19rem right -6.25rem, top 55.9rem left -5.35rem;
 }
@@ -35,7 +35,7 @@ header {
 a {
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 500;  
+  font-weight: 700;  
   display: inline-flex;
   align-items: center; 
   padding-right: 1rem;
@@ -69,7 +69,7 @@ section.hero img {
 
 section.hero h1 {
   font-size: 3.5rem;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
   padding-top: 4.62rem;
 }
@@ -77,7 +77,8 @@ section.hero h1 {
 section.hero p {
   font-weight: 500;
   color: var(--light-blue);
-  padding: 1.5rem 0 2.5rem 0;
+  padding: 1.5rem 1rem 2.5rem 0;
+  line-height: 1.625rem;
 }
 
 section.hero a:nth-child(2) {
@@ -94,7 +95,6 @@ section.hero .preorder-btn {
 
 section.hero .preorder-btn:hover {
   background-color: var(--orange-light);
-  
 }
 
 
@@ -103,8 +103,6 @@ section.keyboard {
   grid-template-columns: 14.06rem 27.81rem minmax(14rem, calc(100vw - 41.87rem));
   gap: 2rem;
   padding-top: 1.875rem;
-
-
 }
 
 
@@ -113,7 +111,6 @@ section.keyboard img {
   height: 100%;
   border-radius: 0.5rem;
 }
-
 
 section.keyboard div {
   display: flex;
@@ -125,14 +122,53 @@ section.keyboard div {
 section.keyboard h1 {
   text-transform: uppercase;
   padding-bottom: 1.68rem;
+  font-weight: 900;
 }
 
 section.keyboard p {
-line-height: 1.5rem;
+  line-height: 1.625rem;
+  color: var(--light-blue);
+  font-weight: 500;
 }
-/* section.keyboard img.phone {
-  background-color: #F16718;
-} */
+
+section.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 10.5rem 0 8rem 0;
+}
+
+section.features h2 {
+ text-transform: uppercase;
+ font-size: 1.5rem;
+ color: #000;
+ padding: 1.5rem 0;
+ font-weight: 900;
+ max-width: 12rem;
+}
+
+section.features p {
+ font-weight: 500;
+ line-height: 1.625rem;
+ color: var(--light-blue);
+}
+
+section.features .image-container {
+  background-color: var(--orange);
+  border-radius: 0.5rem;
+  width: 4.0625rem;
+  height: 4.0625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+  color: var(--light-blue);
+  line-height: 1.625rem;
+  padding-bottom: 2.5rem;
+}
 
 
 
