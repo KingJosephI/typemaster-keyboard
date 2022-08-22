@@ -15,14 +15,14 @@
   --white: #FFFFFF;
 }
 
-body {
+body { 
+   max-width: 1110px;
+  margin: 0 auto;
   font-family: 'Barlow', sans-serif;
   font-size: 16px;
-}
-
-
-body > * {
-  padding: 0 10.31rem;
+  background-image: url('./assets/shared/pattern-square.svg');
+  background-repeat: no-repeat;
+  background-position: top 12.19rem right -6.25rem;
 }
 
 header {
@@ -32,13 +32,10 @@ header {
   padding-bottom: 2.5rem;
 }
 
-
-header a {
+a {
   text-decoration: none;
-  color: var(--dark-blue);
   text-transform: uppercase;
-  font-weight: 500;
-  background-color: var(--gray);
+  font-weight: 500;  
   display: inline-flex;
   align-items: center; 
   padding-right: 1rem;
@@ -46,7 +43,56 @@ header a {
   border-radius: 0.5rem;
 }
 
-header a:hover {
+.preorder-btn {
+  color: var(--dark-blue);
+  background-color: var(--gray);
+}
+
+header .preorder-btn:hover {
   color: var(--white);
   background-color: #162542;
+}
+
+section.hero {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.hero div:first-child > *{
+  max-width: 27.81rem;
+}
+
+section.hero img {
+  max-width: 33.75rem;
+  border-radius: 0.5rem;
+}
+
+section.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 4.62rem;
+}
+
+section.hero p {
+  font-weight: 500;
+  color: var(--light-blue);
+  padding: 1.5rem 0 2.5rem 0;
+}
+
+section.hero a:nth-child(2) {
+  font-weight: 700;
+  color: var(--light-blue);
+}
+
+
+section.hero .preorder-btn {
+  background-color: var(--orange);
+  color: var(--white);
+  min-height: 2.5rem;
+}
+
+section.hero .preorder-btn:hover {
+  background-color: var(--orange-light);
+  
 }
